@@ -1,7 +1,5 @@
-const { defineConfig } = require('cypress')
-
-module.exports = defineConfig({
-  e2e: {
-    baseUrl: 'http://localhost:8080',
-  },
+describe('The Home Page', () => {
+  it('successfully loads', () => {
+    cy.visit('/')
+  })
 })
