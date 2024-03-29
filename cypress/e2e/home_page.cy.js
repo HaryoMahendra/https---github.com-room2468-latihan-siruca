@@ -1,5 +1,7 @@
-describe('The Home Page', () => {
-  it('successfully loads', () => {
-    cy.visit('http://localhost:8080') // change URL to match your dev URL
-  })
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'http://localhost:8080',
+  },
 })
